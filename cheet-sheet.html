@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="stylec.css">
+    <title>cheet-sheet</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            cheet-sheet
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li>
+                display the sum of its digits.
+                <pre>
+                <code class="language-c">
+#include &lt; stdio.h &gt;
+void main(){
+    int a;
+    float b,c=0;
+    printf("enter a number ");
+    scanf("%d",&a);
+     while(a>0){
+         b=a%10;
+        c=c+b;
+        a=a/10;
+        }
+    printf("%f",c);
+    }		
+                       
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                factorial of a given number
+                <pre>
+                <code class="language-c">
+#include &lt;stdio.h&gt
+void main(){
+int a,fact=1,C;
+printf("enter a number ");
+scanf("%d",&a);
+c=a;
+while(a>1){
+fact=fact*a;
+a--;
+}
+printf("the factorial of %d is %d",c,fact);
+}			
+                       
+                       
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                fibonacci series.
+                <pre>
+                <code class="language-c">
+#include&lt;stdio.h&gt
+void main(){
+int a,x,y,z;
+printf("enter the peek of fibonacci ");
+scanf("%d",&a);
+x=0;
+y=1;
+z=0;
+while(z &lt; a){
+printf(" \n %d",z);
+x=y;
+y=z;
+z=x+y;
+}
+}
+                                
+                      
+                        
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                program to reverse a number accepted as an input.*/
+                <pre>
+                <code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int i,rev=0;
+printf("enter a number ");
+scanf("%d",&i);
+while(i>0){
+rev=(rev*10)+i%10;
+i=i/10;
+}
+printf("the rev is%d",rev);
+}
+                                
+                       
+                </code>
+            </pre>
+            </li>
+            <li>
+                check whether the number entered is a Palindrome
+                <pre>
+                <code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int a,b,rev=0;
+printf("enter a num");
+scanf("%d",&a);
+b=a;
+while(a>0){
+rev=(rev*10)+a%10;
+a=a/10;
+}
+if(b==rev)
+printf("the number is palin ");
+else
+printf("the number is not palin");
+}
+    
+                                
+                       
+                </code>
+            </pre>
+            </li>
+            <li>
+                to check whether the number entered is a prime number.
+                <pre>
+
+                <code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int count=0,n,i=1;
+printf("enter a number ");
+scanf("%d",&n);
+while(n>=i){
+n%i==0;
+count=count+1;
+i++;
+}
+if(count==2){
+printf("  prime");
+}
+else{
+printf(" not prime");
+}
+}
+    
+                                
+                       
+                </code>
+            </pre>
+            </li>
+            <li>
+                print sum upto 25 term (1+1/4+1/9+1/16.....1/25)
+                <pre>
+                <code class="language-c">
+#include &lt;stdio.h&gt;
+#include<stdio.h>
+void main(){
+    int a,n;
+    float sum;
+   
+    n=1;
+    sum=0;
+    while(n&lt;25){
+        sum=sum+1.0/(n*n);       
+        n++; 
+      
+    }
+    printf("the sum is %f",sum);
+     
+}                           
+                       
+                </code>
+            </pre>
+            </li>
+            <li>
+                calculate the net salary
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int a,b;
+float net;
+printf("enter basic salary ");
+scanf("%d",&a);
+net=(a+a*0.3+a*0.15+500)-0.2*a-0.05*a-300;
+printf(" the net salary is %f",net);
+}
+    
+                                
+                       
+                </code>
+            </pre>
+            </li>
+            <li>
+                to check whether the number entered is an armstrong number. */
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int a,b,c=0;
+printf("enter a number ");
+scanf("%d",&a);
+b=a;
+while(a>0){
+c=c+(a%10)*(a%10)*(a%10);
+a=a/10;
+}
+ if(c==b)
+printf("the number is Armstrong");
+else
+printf("the number is not armstrong");
+}
+     
+                                
+                       
+                </code>
+            </pre>
+            </li>
+            <li>
+                to check whether the number entered is an armstrong number. */
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int a,b,c=0;
+printf("enter a number ");
+scanf("%d",&a);
+b=a;
+while(a>0){
+c=c+(a%10)*(a%10)*(a%10);
+a=a/10;
+}
+ if(c==b)
+printf("the number is Armstrong");
+else
+printf("the number is not armstrong");
+}
+     
+                                
+                       
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                addition of array
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+    int n;
+    printf("enter size of array ");
+    scanf("%d",&n);
+    int a[n],i,j,sum=0;
+    i=1;
+    while(i&lt;=n){
+        printf("enter element of array ");
+        scanf("%d",&a[i]);
+        i++;
+    }
+    i=1;
+    while (i&lt;=n)
+    {
+        sum=sum+a[i];
+        i++;
+    }
+    printf("the sum of array is %d",sum);
+    
+}                                 
+                                 
+                       
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                taking array input and printing
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+    int n;
+    printf("enter the size of array");
+    scanf("%d",&n);
+    int a[n],i;
+     for(i=1;i&lt;=n; i++){
+         printf("enter element of array ");
+         scanf("%d",&a[i]);
+     }
+     for (i=1; i&lt;=n; i++){
+         printf("\n %d",a[i]);
+     }
+      
+     
+}                            
+                                 
+                       
+                </code>
+            </pre>
+            </li>
+
+
+            <li>
+                printing reverse of array
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+int n;
+    printf("enter the size of array ");
+    scanf("%d",&n);
+    int a[n],i;
+    i=1;
+    while (i&lt;=n)
+    {
+        printf("enter element of array");
+        scanf("%d",&a[i]);
+        i++;
+    }
+    i=n;
+    while(i>0){
+        printf("\n%d",a[i]);
+        i--;
+    }
+    
+}                           
+                                 
+                       
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                take the input in array and check whether the number is even of odd also print the number
+                <pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+    int n;
+    printf("enter the size of array");
+    scanf("%d",&n);
+    int a[n],i,even=0,odd=0;
+    i=1;
+    while(i&lt;=n){
+        printf("enter number in array");
+        scanf("%d",&a[i]);
+        i++;
+    }
+    i=1;
+    while(i&lt;=n){
+        if(a[i]%2==0){
+        printf("%d is even\n",a[i]);
+        }
+        else{
+            printf(" %d is odd\n",a[i]);
+        }
+        i++;
+    }
+}                  
+                                 
+                       
+                </code>
+            </pre>
+            </li>
+
+            <li>
+                max of array
+                <pre>
+               <code class="language-c">
+#include &lt;stdio.h&gt;
+void main()
+{
+    int n;
+    printf("enter size of array");
+    scanf("%d", &n);
+    int a[n], i, max= a[0];
+    i = 1;
+    while (i &lt;= n)
+    {
+        printf("enter element in array ");
+        scanf("%d", &a[i]);
+        i++;
+    }
+   
+   
+    i = 1;
+    while (i &lt;= n)
+    {
+        if (max &lt; a[i] ){
+        
+            max = a[i];    
+        }
+        
+        i++;
+    }
+    printf("the max number is %d", max);
+
+}     
+                                                
+                                      
+                               </code>
+                           </pre>
+            </li>
+
+
+            <li>
+                sum of even and product of odd in array
+                <pre>
+               <code class="language-c">
+#include &lt;stdio.h&gt;
+void main(){
+    int n;
+    printf("enter the size of array");
+    scanf("%d",&n);
+    int a[n],i,even=0,odd=0,sum=0,product=1;
+    i=1;
+    while(i&lt;=n){
+        printf("enter number in array");
+        scanf("%d",&a[i]);
+        i++;
+    }
+    i=1;
+    while(i&lt;=n){
+        if(a[i]%2==0){
+        sum=sum+a[i];
+         }
+        else{
+            product=product*a[i];
+         }
+        i++;
+    }
+    printf("the sum of even number in array is %d \nand product of odd is %d ",sum,product);
+}
+                                                
+                                      
+                               </code>
+                           </pre>
+            </li>
+
+          
+
+ 
+                                                
+                                      
+                               </code>
+                           </pre>
+            </li>
+
+
+            </code>
+            </pre>
+            </li>
+
+        </ol>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-transform: uppercase;
+  }
+.logo{
+     justify-content: center;
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     background-color: rgb(150, 150, 150);
+     padding: 20px;
+     color: black;
+     font-size: 36px;
+ 
+}
+
+ 
+.container{
+   width: 60vw;
+ margin: auto;
+font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.toolbar-item button{
+margin: 15px,20px !important;
+margin: 15px !important;
+background-color: #f1eeee !important;
+color: #00bcd4 !important;
+text-shadow: 2px solid #00bcd4 !important;
+padding: 7px 25px !important;
+/* box-shadow: 0 5px white; */
+border-radius: 36px !important;
+border: skyblue !important;
+border: 2px solid white;
+}
